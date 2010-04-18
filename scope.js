@@ -32,7 +32,7 @@ beam[i].style.top=100+Math.round(i/3);
 function run_demo(){
 for (i=1; i<201; i++){
 beam[i].style.left=110+i;
-beam[i].style.top=100 + Math.round(40*(Math.sin(i*2/v_pot)))
+beam[i].style.top=100 + Math.round(h_pot/3*(Math.sin(i*2/v_pot)))
 }
 }
 
