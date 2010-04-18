@@ -6,15 +6,15 @@
   <meta name="keywords" content="analog,opamp,op-amp,electronics,tutorial">
   <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
   <meta content="Anantha Narayan" name="author">
-  <meta content="An Interactive Tutorial demonstrating how an Non-Inverting Operational Amplifier works" name="description">
+  <meta content="An Interactive Tutorial demonstrating how an Oscilloscope works" name="description">
   <link rel="StyleSheet" href="style.css" type="text/css">
-  <title>Ajax Oscilloscope</title>
+  <title>Javascript Digital Oscilloscope</title>
 </head>
 <body alink="#ff00ff" bgcolor="#ffffff" link="#ff0000" text="#000000" vlink="#800000">
 <div class="frame-holder">
-<div class="circuit"></div>
-<div class="inc1"><img name="incled" onclick="start_timer();"title="Increment" alt="Increment" src="pngs/inc-off.png"></div>
-<div class="dec1"><img name="decled" onclick="stop_timer();" title="Decrement" alt="Decrement" src="pngs/dec-off.png"></div>
+<div class="scoped"></div>
+<div class="poweron"><img name="powersw" onclick="on_beam();"title="On Off" alt="On Off" src="pngs/orn-off.png"><br/>On</div>
+<div class="modeon"><img name="modesw" onclick="on_demo();" title="Demo" alt="Demo" src="pngs/blu-off.png"><br/>Demo</div>
 <div id="pot1_control"><div style="position: relative; left:170; top:0;" id="pot1_set"></div>
 <div class="p1_track"></div>
 </div>
@@ -41,10 +41,10 @@
 <div id="point171"></div><div id="point172"></div><div id="point173"></div><div id="point174"></div><div id="point175"></div><div id="point176"></div><div id="point177"></div><div id="point178"></div><div id="point179"></div><div id="point180"></div>
 <div id="point181"></div><div id="point182"></div><div id="point183"></div><div id="point184"></div><div id="point185"></div><div id="point186"></div><div id="point187"></div><div id="point188"></div><div id="point189"></div><div id="point190"></div>
 <div id="point191"></div><div id="point192"></div><div id="point193"></div><div id="point194"></div><div id="point195"></div><div id="point196"></div><div id="point197"></div><div id="point198"></div><div id="point199"></div><div id="point200"></div>
-<div class="p1fr"><span id="p1val">170 K</span></div>
-<div class="p2fr"><span id="p2val">170 K</span></div>
+<div class="p1fr"><span id="p1val">170</span></div>
+<div class="p2fr"><span id="p2val">170</span></div>
 <div class="credits"><a target="_blank" href="http://www.dapj.com/">dapj Tech</a></div>
-<div class="help-man"><a target="_blank" href="http://www.dapj.com/analog/non-inverting-opamp"><img src="pngs/help.png" title="Help" alt="Help" border="0"></a></div>
+<div class="help-man"><a target="_blank" href=""><img src="pngs/help.png" title="Help" alt="Help" border="0"></a></div>
 </div>
 <script language="Javascript" type="text/javascript" src="scope.js"></script>
 </body>
