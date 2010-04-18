@@ -1,0 +1,327 @@
+body {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background-color: transparent;
+	color: #6B581C;
+	font-size: 12px;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+}
+
+img {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+a:link,a:active,a:visited {
+	text-decoration: none;
+	color: #7B68EE;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #DC143C;
+}
+
+form, textarea, select, input{
+	color: #9370DB;
+	font-weight: bold;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 7px;
+	margin: 1px 1px 1px 1px;
+	padding: 1px 1px 1px 1px;
+}
+
+.frame-holder{
+	background-image: url(notebook.png);
+	position: absolute;
+	left: 0;
+	top: 0;
+	height:520px;
+	width:100%;
+	z-index: 1;
+	background-color: transparent;
+}
+
+.circuit{
+  	background-image: url(scope.jpg);
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	position: absolute;
+	left: 100px;
+	top: 10px;
+	height: 182px;
+	width: 223px;
+	z-index: 1;
+	text-align: center;
+}
+
+
+.credits{
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	z-index: 100;
+	height: 20px;
+	width: 100px;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.p1_track{
+	position: absolute;
+	left: 0px;
+	top: 40px;
+	height: 20px;
+	width: 200px;
+	background-color: transparent;
+	background-image: url(pngs/pot-track.png);
+	z-index: 200;
+	text-align: center;
+}
+
+#pot1_set{
+	position: relative;
+	height: 43px;
+	width: 17px;
+	background-image: url(pngs/slider.png);
+	background-repeat: no-repeat;
+	z-index: 250;
+}
+
+#pot1_control{
+	position: absolute;
+	left: 110px;
+	top: 225px;
+	height: 60px;
+	width: 200px;
+	z-index: 100;
+}
+
+.p2_track{
+	position: absolute;
+	left: 0px;
+	top: 40px;
+	height: 20px;
+	width: 200px;
+	background-color: transparent;
+	background-image: url(pngs/pot-track.png);
+	z-index: 200;
+	text-align: center;
+}
+
+#pot2_set{
+	position: relative;
+	height: 43px;
+	width: 17px;
+	background-image: url(pngs/slider.png);
+	background-repeat: no-repeat;
+	z-index: 250;
+}
+
+#pot2_control{
+	position: absolute;
+	left:110px;
+	top: 300px;
+	height: 60px;
+	width: 200px;
+	z-index: 100;
+}
+
+
+.inc1{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	position: absolute;
+	left: 150px;
+	top: 200px;
+	height: 20px;
+	width: 20px;
+	z-index: 220;
+}
+
+.dec1{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	position: absolute;
+	left: 110px;
+	top: 200px;
+	height: 20px;
+	width: 20px;
+	z-index: 220;
+}
+
+.help-man{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	position: absolute;
+	left: 60px;
+	top: 40px;
+	z-index: 20;
+	height:25px;
+	width:25px;
+}
+
+.p1fr{
+	position: absolute;
+	left: 420px;
+	top: 5px;
+	height: 20px;
+	width: 80px;
+	background-color: transparent;
+	z-index: 200;
+	overflow: hidden;
+}
+
+#p1val{
+	background-color: transparent;
+	position: absolute;
+	height: 18px;
+	width: 70px;
+	left: 5px;
+	top: 5px;
+	font-size: 12px;
+	color: #6A5ACD;
+	z-index: 300;
+	text-align: center;
+	font-weight: bold;
+}
+
+.p2fr{
+	position: absolute;
+	left: 30px;
+	top: 133px;
+	height: 20px;
+	width: 80px;
+	background-color: transparent;
+	z-index: 200;
+	overflow: hidden;
+}
+
+#p2val{
+	background-color: transparent;
+	position: absolute;
+	height: 18px;
+	width: 70px;
+	left: 5px;
+	top: 5px;
+	font-size: 12px;
+	color: #6A5ACD;
+	z-index: 300;
+	text-align: center;
+	font-weight: bold;
+}
+
+
+
+
+#point1,#point2,#point3,#point4,#point5,#point6,#point7,#point8,#point9,#point10,#point11,#point12,#point13,#point14,#point15,#point16,#point17,#point18,#point19,#point20{
+  	font-size: 1px;
+	position: absolute;
+	height: 1px;
+	width: 1px;
+	left: 110px;
+	top: 100px;
+	background-color: Aqua;
+	z-index: 250;
+}
+
+#point21,#point22,#point23,#point24,#point25,#point26,#point27,#point28,#point29,#point30,#point31,#point32,#point33,#point34,#point35,#point36,#point37,#point38,#point39,#point40{
+  	font-size: 1px;
+	position: absolute;
+	height: 1px;
+	width: 1px;
+	left: 110px;
+	top: 100px;
+	background-color: Aqua;
+	z-index: 250;
+}
+
+#point41,#point42,#point43,#point44,#point45,#point46,#point47,#point48,#point49,#point50,#point51,#point52,#point53,#point54,#point55,#point56,#point57,#point58,#point59,#point60{
+  	font-size: 1px;
+	position: absolute;
+	height: 1px;
+	width: 1px;
+	left: 110px;
+	top: 100px;
+	background-color: Aqua;
+	z-index: 250;
+}
+
+#point61,#point62,#point63,#point64,#point65,#point66,#point67,#point68,#point69,#point70,#point71,#point72,#point73,#point74,#point75,#point76,#point77,#point78,#point79,#point80{
+  	font-size: 1px;
+	position: absolute;
+	height: 1px;
+	width: 1px;
+	left: 110px;
+	top: 100px;
+	background-color: Aqua;
+	z-index: 250;
+}
+
+#point81,#point82,#point83,#point84,#point85,#point86,#point87,#point88,#point89,#point90,#point91,#point92,#point93,#point94,#point95,#point96,#point97,#point98,#point99,#point100{
+  	font-size: 1px;
+	position: absolute;
+	height: 1px;
+	width: 1px;
+	left: 110px;
+	top: 100px;
+	background-color: Aqua;
+	z-index: 250;
+}
+
+#point101,#point102,#point103,#point104,#point105,#point106,#point107,#point108,#point109,#point110,#point111,#point112,#point113,#point114,#point115,#point116,#point117,#point118,#point119,#point120{
+  	font-size: 1px;
+	position: absolute;
+	height: 1px;
+	width: 1px;
+	left: 110px;
+	top: 100px;
+	background-color: Aqua;
+	z-index: 250;
+}
+
+#point121,#point122,#point123,#point124,#point125,#point126,#point127,#point128,#point129,#point130,#point131,#point132,#point133,#point134,#point135,#point136,#point137,#point138,#point139,#point140{
+  	font-size: 1px;
+	position: absolute;
+	height: 1px;
+	width: 1px;
+	left: 110px;
+	top: 100px;
+	background-color: Aqua;
+	z-index: 250;
+}
+
+#point141,#point142,#point143,#point144,#point145,#point146,#point147,#point148,#point149,#point150,#point151,#point152,#point153,#point154,#point155,#point156,#point157,#point158,#point159,#point160{
+  	font-size: 1px;
+	position: absolute;
+	height: 1px;
+	width: 1px;
+	left: 110px;
+	top: 100px;
+	background-color: Aqua;
+	z-index: 250;
+}
+
+#point161,#point162,#point163,#point164,#point165,#point166,#point167,#point168,#point169,#point170,#point171,#point172,#point173,#point174,#point175,#point176,#point177,#point178,#point179,#point180{
+  	font-size: 1px;
+	position: absolute;
+	height: 1px;
+	width: 1px;
+	left: 110px;
+	top: 100px;
+	background-color: Aqua;
+	z-index: 250;
+}
+
+#point181,#point182,#point183,#point184,#point185,#point186,#point187,#point188,#point189,#point190,#point191,#point192,#point193,#point194,#point195,#point196,#point197,#point198,#point199,#point200{
+  	font-size: 1px;
+	position: absolute;
+	height: 1px;
+	width: 1px;
+	left: 110px;
+	top: 100px;
+	background-color: Aqua;
+	z-index: 250;
+}
