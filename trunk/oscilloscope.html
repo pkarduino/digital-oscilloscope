@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script language="Javascript" type="text/javascript" src="dom-drag.js"></script>
+  <meta name="generator" content="textpad 4.6">
+  <meta name="keywords" content="analog,opamp,op-amp,electronics,tutorial">
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <meta content="Anantha Narayan" name="author">
+  <meta content="An Interactive Tutorial demonstrating how an Non-Inverting Operational Amplifier works" name="description">
+  <link rel="StyleSheet" href="style.css" type="text/css">
+  <title>Ajax Oscilloscope</title>
+</head>
+<body alink="#ff00ff" bgcolor="#ffffff" link="#ff0000" text="#000000" vlink="#800000">
+<div class="frame-holder">
+<div class="circuit"></div>
+<div class="inc1"><img name="incled" onclick="start_timer();"title="Increment" alt="Increment" src="pngs/inc-off.png"></div>
+<div class="dec1"><img name="decled" onclick="stop_timer();" title="Decrement" alt="Decrement" src="pngs/dec-off.png"></div>
+<div id="pot1_control"><div style="position: relative; left:170; top:0;" id="pot1_set"></div>
+<div class="p1_track"></div>
+</div>
+<div id="pot2_control"><div style="position: relative; left:170; top:0;" id="pot2_set"></div>
+<div class="p2_track"></div>
+</div>
+<div id="point1"></div><div id="point2"></div><div id="point3"></div><div id="point4"></div><div id="point5"></div><div id="point6"></div><div id="point7"></div><div id="point8"></div><div id="point9"></div><div id="point10"></div>
+<div id="point11"></div><div id="point12"></div><div id="point13"></div><div id="point14"></div><div id="point15"></div><div id="point16"></div><div id="point17"></div><div id="point18"></div><div id="point19"></div><div id="point20"></div>
+<div id="point21"></div><div id="point22"></div><div id="point23"></div><div id="point24"></div><div id="point25"></div><div id="point26"></div><div id="point27"></div><div id="point28"></div><div id="point29"></div><div id="point30"></div>
+<div id="point31"></div><div id="point32"></div><div id="point33"></div><div id="point34"></div><div id="point35"></div><div id="point36"></div><div id="point37"></div><div id="point38"></div><div id="point39"></div><div id="point40"></div>
+<div id="point41"></div><div id="point42"></div><div id="point43"></div><div id="point44"></div><div id="point45"></div><div id="point46"></div><div id="point47"></div><div id="point48"></div><div id="point49"></div><div id="point50"></div>
+<div id="point51"></div><div id="point52"></div><div id="point53"></div><div id="point54"></div><div id="point55"></div><div id="point56"></div><div id="point57"></div><div id="point58"></div><div id="point59"></div><div id="point60"></div>
+<div id="point61"></div><div id="point62"></div><div id="point63"></div><div id="point64"></div><div id="point65"></div><div id="point66"></div><div id="point67"></div><div id="point68"></div><div id="point69"></div><div id="point70"></div>
+<div id="point71"></div><div id="point72"></div><div id="point73"></div><div id="point74"></div><div id="point75"></div><div id="point76"></div><div id="point77"></div><div id="point78"></div><div id="point79"></div><div id="point80"></div>
+<div id="point81"></div><div id="point82"></div><div id="point83"></div><div id="point84"></div><div id="point85"></div><div id="point86"></div><div id="point87"></div><div id="point88"></div><div id="point89"></div><div id="point90"></div>
+<div id="point91"></div><div id="point92"></div><div id="point93"></div><div id="point94"></div><div id="point95"></div><div id="point96"></div><div id="point97"></div><div id="point98"></div><div id="point99"></div><div id="point100"></div>
+<div id="point101"></div><div id="point102"></div><div id="point103"></div><div id="point104"></div><div id="point105"></div><div id="point106"></div><div id="point107"></div><div id="point108"></div><div id="point109"></div><div id="point110"></div>
+<div id="point111"></div><div id="point112"></div><div id="point113"></div><div id="point114"></div><div id="point115"></div><div id="point116"></div><div id="point117"></div><div id="point118"></div><div id="point119"></div><div id="point120"></div>
+<div id="point121"></div><div id="point122"></div><div id="point123"></div><div id="point124"></div><div id="point125"></div><div id="point126"></div><div id="point127"></div><div id="point128"></div><div id="point129"></div><div id="point130"></div>
+<div id="point131"></div><div id="point132"></div><div id="point133"></div><div id="point134"></div><div id="point135"></div><div id="point136"></div><div id="point137"></div><div id="point138"></div><div id="point139"></div><div id="point140"></div>
+<div id="point141"></div><div id="point142"></div><div id="point143"></div><div id="point144"></div><div id="point145"></div><div id="point146"></div><div id="point147"></div><div id="point148"></div><div id="point149"></div><div id="point150"></div>
+<div id="point151"></div><div id="point152"></div><div id="point153"></div><div id="point154"></div><div id="point155"></div><div id="point156"></div><div id="point157"></div><div id="point158"></div><div id="point159"></div><div id="point160"></div>
+<div id="point161"></div><div id="point162"></div><div id="point163"></div><div id="point164"></div><div id="point165"></div><div id="point166"></div><div id="point167"></div><div id="point168"></div><div id="point169"></div><div id="point170"></div>
+<div id="point171"></div><div id="point172"></div><div id="point173"></div><div id="point174"></div><div id="point175"></div><div id="point176"></div><div id="point177"></div><div id="point178"></div><div id="point179"></div><div id="point180"></div>
+<div id="point181"></div><div id="point182"></div><div id="point183"></div><div id="point184"></div><div id="point185"></div><div id="point186"></div><div id="point187"></div><div id="point188"></div><div id="point189"></div><div id="point190"></div>
+<div id="point191"></div><div id="point192"></div><div id="point193"></div><div id="point194"></div><div id="point195"></div><div id="point196"></div><div id="point197"></div><div id="point198"></div><div id="point199"></div><div id="point200"></div>
+<div class="p1fr"><span id="p1val">170 K</span></div>
+<div class="p2fr"><span id="p2val">170 K</span></div>
+<div class="credits"><a target="_blank" href="http://www.dapj.com/">dapj Tech</a></div>
+<div class="help-man"><a target="_blank" href="http://www.dapj.com/analog/non-inverting-opamp"><img src="pngs/help.png" title="Help" alt="Help" border="0"></a></div>
+</div>
+<script language="Javascript" type="text/javascript" src="scope.js"></script>
+</body>
+</html>
