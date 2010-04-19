@@ -2,6 +2,8 @@
 var beam = new Array();
 var hpos1=110;
 var vpos1=100;
+var pix1 =100;
+var pix2 =101;
 
 // Preload Images
 var pwr_0 = new Image();
@@ -32,7 +34,10 @@ beam[i].style.top=100+Math.round(i/3);
 function run_demo(){
 for (i=1; i<201; i++){
 beam[i].style.left=110+i;
-beam[i].style.top=100 + Math.round(h_pot/3*(Math.sin(i*2/v_pot)))
+pix2 = 100 + Math.round(h_pot/3*(Math.sin(i*2/v_pot)))
+beam[i].style.top=pix2;
+beam[i].style.height=1 + Math.abs(pix2-pix1);
+pix1=pix2;
 }
 }
 
