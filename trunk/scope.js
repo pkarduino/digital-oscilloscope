@@ -30,8 +30,8 @@ dem_0.src = "pngs/blu-off.png";
 var dem_1 = new Image();
 dem_1.src = "pngs/blu-on.png";
 // set values
-var v_pot=170;
-var h_pot=170;
+var v_pot=100;
+var h_pot=100;
 //
 
 function beamit(){
