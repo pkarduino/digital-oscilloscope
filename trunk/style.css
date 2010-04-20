@@ -30,12 +30,12 @@ form, textarea, select, input{
 }
 
 .frame-holder{
-	background-image: url(bezel.png);
+	background-image: url(bezel.jpg);
 	position: absolute;
 	left: 0;
 	top: 0;
-	height:520px;
-	width:350px;
+	height:500px;
+	width:330px;
 	z-index: 1;
 	background-color: transparent;
 }
@@ -43,11 +43,11 @@ form, textarea, select, input{
 .frame-back{
 	background-image: url(back.jpg);
 	position: absolute;
-	left: 10;
-	top: 10;
-	height:500px;
-	width:330px;
-	z-index: 1;
+	left: 7;
+	top: 18;
+	height:464px;
+	width:315px;
+	z-index: 2;
 	background-color: transparent;
 }
 
@@ -56,11 +56,11 @@ form, textarea, select, input{
 	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
 	position: absolute;
-	left: 20px;
+	left: 10px;
 	top: 22px;
 	height: 182px;
 	width: 223px;
-	z-index: 1;
+	z-index: 10;
 	text-align: center;
 }
 
@@ -68,11 +68,11 @@ form, textarea, select, input{
 	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
 	position: absolute;
-	left: 20px;
+	left: 22px;
 	top: 35px;
 	height: 160px;
-	width: 210px;
-	z-index: 2;
+	width: 200px;
+	z-index: 20;
 	text-align: center;
 	overflow: hidden;
 }
@@ -80,7 +80,7 @@ form, textarea, select, input{
 .credits{
 	position: absolute;
 	left: 15px;
-	top: 475px;
+	top: 460px;
 	z-index: 100;
 	height: 20px;
 	width: 80px;
@@ -96,9 +96,10 @@ form, textarea, select, input{
 	left: 0px;
 	top: 2px;
 	height: 10px;
-	width: 200px;
+	width: 210px;
 	background-color: transparent;
 	background-image: url(pngs/pot.png);
+	background-repeat: no-repeat;
 	z-index: 200;
 	text-align: center;
 }
@@ -114,10 +115,10 @@ form, textarea, select, input{
 
 #pot1_control{
 	position: absolute;
-	left: 110px;
-	top: 260px;
-	height: 20px;
-	width: 200px;
+	left: 20px;
+	top: 220px;
+	height: 10px;
+	width: 210px;
 	z-index: 100;
 }
 
@@ -126,9 +127,10 @@ form, textarea, select, input{
 	left: 0px;
 	top: 2px;
 	height: 10px;
-	width: 200px;
+	width: 210px;
 	background-color: transparent;
 	background-image: url(pngs/pot.png);
+	background-repeat: no-repeat;
 	z-index: 200;
 	text-align: center;
 }
@@ -144,13 +146,74 @@ form, textarea, select, input{
 
 #pot2_control{
 	position: absolute;
-	left:110px;
-	top: 350px;
-	height: 20px;
-	width: 200px;
+	left:20px;
+	top: 250px;
+	height: 10px;
+	width: 210px;
 	z-index: 100;
 }
 
+.p3_track{
+	position: absolute;
+	left: 0px;
+	top: 2px;
+	height: 10px;
+	width: 210px;
+	background-color: transparent;
+	background-image: url(pngs/pot.png);
+	background-repeat: no-repeat;
+	z-index: 200;
+	text-align: center;
+}
+
+#pot3_set{
+	position: relative;
+	height: 13px;
+	width: 13px;
+	background-image: url(pngs/grip.gif);
+	background-repeat: no-repeat;
+	z-index: 250;
+}
+
+#pot3_control{
+	position: absolute;
+	left:20px;
+	top: 280px;
+	height: 10px;
+	width: 210px;
+	z-index: 100;
+}
+
+.p4_track{
+	position: absolute;
+	left: 0px;
+	top: 2px;
+	height: 10px;
+	width: 210px;
+	background-color: transparent;
+	background-image: url(pngs/pot.png);
+	background-repeat: no-repeat;
+	z-index: 200;
+	text-align: center;
+}
+
+#pot4_set{
+	position: relative;
+	height: 13px;
+	width: 13px;
+	background-image: url(pngs/grip.gif);
+	background-repeat: no-repeat;
+	z-index: 250;
+}
+
+#pot4_control{
+	position: absolute;
+	left:20px;
+	top: 310px;
+	height: 10px;
+	width: 210px;
+	z-index: 100;
+}
 
 .poweron{
 	margin: 0px 0px 0px 0px;
@@ -189,7 +252,7 @@ form, textarea, select, input{
 	padding: 0px 0px 0px 0px;
 	position: absolute;
 	left: 45px;
-	top: 440px;
+	top: 430px;
 	z-index: 20;
 	height:25px;
 	width:25px;
@@ -197,10 +260,10 @@ form, textarea, select, input{
 
 .p1fr{
 	position: absolute;
-	left: 30px;
-	top: 260px;
+	left: 230px;
+	top: 215px;
 	height: 20px;
-	width: 80px;
+	width: 100px;
 	background-color: transparent;
 	z-index: 200;
 	overflow: hidden;
@@ -210,23 +273,23 @@ form, textarea, select, input{
 	background-color: transparent;
 	position: absolute;
 	height: 18px;
-	width: 70px;
+	width: 90px;
 	left: 5px;
 	top: 5px;
-	font-size: 14px;
+	font-size: 12px;
 	color: #6A5ACD;
 	z-index: 300;
-	text-align: center;
+	text-align: left;
 	font-weight: bold;
 	font-family: Verdana,Arial,Helvetica,sans-serif;
 }
 
 .p2fr{
 	position: absolute;
-	left: 30px;
-	top: 335px;
+	left: 230px;
+	top: 245px;
 	height: 20px;
-	width: 80px;
+	width: 100px;
 	background-color: transparent;
 	z-index: 200;
 	overflow: hidden;
@@ -236,23 +299,75 @@ form, textarea, select, input{
 	background-color: transparent;
 	position: absolute;
 	height: 18px;
-	width: 70px;
+	width: 90px;
 	left: 5px;
 	top: 5px;
-	font-size: 14px;
+	font-size: 12px;
 	color: #6A5ACD;
 	z-index: 300;
-	text-align: center;
+	text-align: left;
+	font-weight: bold;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+}
+
+.p3fr{
+	position: absolute;
+	left: 230px;
+	top: 275px;
+	height: 20px;
+	width: 100px;
+	background-color: transparent;
+	z-index: 200;
+	overflow: hidden;
+}
+
+#p3val{
+	background-color: transparent;
+	position: absolute;
+	height: 18px;
+	width: 90px;
+	left: 5px;
+	top: 5px;
+	font-size: 12px;
+	color: #6A5ACD;
+	z-index: 300;
+	text-align: left;
+	font-weight: bold;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+}
+
+.p4fr{
+	position: absolute;
+	left: 230px;
+	top: 305px;
+	height: 20px;
+	width: 100px;
+	background-color: transparent;
+	z-index: 200;
+	overflow: hidden;
+}
+
+#p4val{
+	background-color: transparent;
+	position: absolute;
+	height: 18px;
+	width: 90px;
+	left: 5px;
+	top: 5px;
+	font-size: 12px;
+	color: #6A5ACD;
+	z-index: 300;
+	text-align: left;
 	font-weight: bold;
 	font-family: Verdana,Arial,Helvetica,sans-serif;
 }
 
 .modedsp{
 	position: absolute;
-	left: 150px;
-	top: 200px;
-	height: 30px;
-	width: 220px;
+	left: 250px;
+	top: 150px;
+	height:50px;
+	width: 50px;
 	background-color: transparent;
 	z-index: 200;
 	overflow: hidden;
@@ -261,11 +376,11 @@ form, textarea, select, input{
 #modeval{
 	background-color: transparent;
 	position: absolute;
-	height: 25px;
-	width: 210px;
+	height: 40px;
+	width: 40px;
 	left: 5px;
 	top: 5px;
-	font-size: 15px;
+	font-size: 12px;
 	color: #9F116A;
 	z-index: 300;
 	text-align: center;

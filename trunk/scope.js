@@ -1,8 +1,8 @@
 // Start JS Oscilloscope
 var beam = new Array();
 var wavef = new Array();
-var hpos1=10;
-var vpos1=78;
+var hpos1=0;
+var vpos1=0;
 var pix1 =100;
 var pix2 =101;
 var vect =1;
@@ -10,15 +10,15 @@ var bounce = 400;
 //demos
 var dem_no=0;
 var xmov;
-wavef[1]= "Math.round(h_pot/3*(Math.sin(xmov*2/v_pot)));"
-wavef[2]= "Math.round(h_pot/4*(Math.asin(Math.sin(xmov*2/v_pot))));";
-wavef[3]= "Math.round(h_pot/3*((Math.sin(5*xmov/v_pot)>0)?1:-1));"
-wavef[4]= "Math.round(h_pot/1.4*((xmov/v_pot)%1-0.5));"
-wavef[5]= "Math.round(h_pot/3*(Math.tan(xmov*2/v_pot)));"
-wavef[6]= "Math.round(h_pot/3*(Math.cos(xmov*2/v_pot)));";
-wavef[7]= "Math.round(h_pot/3*(Math.sin(xmov*2/v_pot)));"
-wavef[8]= "Math.round(h_pot/3*(Math.sin(xmov*2/v_pot)));"
-wavef[9]= "Math.round(h_pot/3*(Math.sin(xmov*2/v_pot)));"
+wavef[1]= "Math.round(v_pot/2*(Math.sin(xmov*2/h_pot)));"
+wavef[2]= "Math.round(v_pot/4*(Math.asin(Math.sin(xmov*2/h_pot))));";
+wavef[3]= "Math.round(v_pot/3*((Math.sin(5*xmov/h_pot)>0)?1:-1));"
+wavef[4]= "Math.round(v_pot/1.4*((xmov/h_pot)%1-0.5));"
+wavef[5]= "Math.round(v_pot/3*(Math.tan(xmov*2/h_pot)));"
+wavef[6]= "Math.round(v_pot/3*(Math.cos(xmov*2/h_pot)));";
+wavef[7]= "Math.round(v_pot/3*(Math.sin(xmov*2/h_pot)));"
+wavef[8]= "Math.round(v_pot/3*(Math.sin(xmov*2/h_pot)));"
+wavef[9]= "Math.round(v_pot/3*(Math.sin(xmov*2/h_pot)));"
 
 // Preload Images
 var pwr_0 = new Image();
@@ -50,7 +50,7 @@ function run_demo(){
 for (i=1; i<201; i++){
 beam[i].style.left=hpos1+i;
 xmov=i;
-pix2 = vpos1 + eval(wavef[dem_no])
+pix2 = 77 - vpos1 + eval(wavef[dem_no])
 beam[i].style.top=pix2;
 vect = 1 + Math.abs(pix2-pix1);
 if (vect>9){vect=9;}
@@ -61,16 +61,30 @@ pix1=pix2;
 
 //drag-drop pots
 var p1Thumb = document.getElementById("pot1_set");
-Drag.init(p1Thumb, null, 10, 170, 0, 0);
+Drag.init(p1Thumb, null, 0, 200, 0, 0);
 p1Thumb.onDrag = function(x, y){
-v_pot = Math.round(x*100)/100;
+h_pot = Math.round(x*100)/100;
 dsp_all();
 };
 //
 var p2Thumb = document.getElementById("pot2_set");
-Drag.init(p2Thumb, null, 10, 170, 0, 0);
+Drag.init(p2Thumb, null, 0, 200, 0, 0);
 p2Thumb.onDrag = function(x, y){
-h_pot = Math.round(x*100)/100;
+v_pot = Math.round(x*100)/100;
+dsp_all();
+};
+//
+var p3Thumb = document.getElementById("pot3_set");
+Drag.init(p3Thumb, null, 0, 200, 0, 0);
+p3Thumb.onDrag = function(x, y){
+hpos1 = -100 + Math.round(x);
+dsp_all();
+};
+//
+var p4Thumb = document.getElementById("pot4_set");
+Drag.init(p4Thumb, null, 0, 200, 0, 0);
+p4Thumb.onDrag = function(x, y){
+vpos1 = -100 + Math.round(x);
 dsp_all();
 };
 // Make Buttons Work
@@ -97,6 +111,7 @@ beam[i].style.visibility= "hidden";
 }
 //
 function on_demo(){
+if (pwr_on==1){
 dem_on=1;
 document.images.modesw.src=dem_1.src;
 if(dem_no<9){dem_no++;}else{dem_no=1}
@@ -105,12 +120,18 @@ show_text(1,'modeval');
 run_demo();
 setTimeout("off_dem();",bounce);
 }
+}
 //
 function dsp_all(){
-linktext[4]= v_pot;
-show_text(4,'p1val');
-linktext[3]= h_pot;
-show_text(3,'p2val');
+linktext[3]= h_pot + " uS";
+show_text(3,'p1val');
+linktext[4]= (v_pot/10) + " V";
+show_text(4,'p2val');
+linktext[5]= "X - " + hpos1;
+show_text(5,'p3val');
+linktext[6]= "Y - " + vpos1;
+show_text(6,'p4val');
+
 run_demo();
 }
 //
