@@ -11,8 +11,8 @@
   <title>Javascript Digital Oscilloscope</title>
 </head>
 <body alink="#ff00ff" bgcolor="#ffffff" link="#ff0000" text="#000000" vlink="#800000">
-<div class="frame-back"></div>
 <div class="frame-holder">
+<div class="frame-back"></div>
 <div class="scoped"></div>
 <div class="poweron"><img name="powersw" onclick="on_beam();"title="On Off" alt="On Off" src="pngs/orn-off.png"><br/>On</div>
 <div class="modeon"><img name="modesw" onclick="on_demo();" title="Demo" alt="Demo" src="pngs/blu-off.png"><br/>Demo</div>
@@ -21,6 +21,12 @@
 </div>
 <div id="pot2_control"><div style="position: relative; left:100; top:0;" id="pot2_set"></div>
 <div class="p2_track"></div>
+</div>
+<div id="pot3_control"><div style="position: relative; left:100; top:0;" id="pot3_set"></div>
+<div class="p3_track"></div>
+</div>
+<div id="pot4_control"><div style="position: relative; left:100; top:0;" id="pot4_set"></div>
+<div class="p4_track"></div>
 </div>
 <div class="scopefr">
 <div id="point1"></div><div id="point2"></div><div id="point3"></div><div id="point4"></div><div id="point5"></div><div id="point6"></div><div id="point7"></div><div id="point8"></div><div id="point9"></div><div id="point10"></div>
@@ -44,11 +50,13 @@
 <div id="point181"></div><div id="point182"></div><div id="point183"></div><div id="point184"></div><div id="point185"></div><div id="point186"></div><div id="point187"></div><div id="point188"></div><div id="point189"></div><div id="point190"></div>
 <div id="point191"></div><div id="point192"></div><div id="point193"></div><div id="point194"></div><div id="point195"></div><div id="point196"></div><div id="point197"></div><div id="point198"></div><div id="point199"></div><div id="point200"></div>
 </div>
-<div class="p1fr"><span id="p1val">100</span></div>
-<div class="p2fr"><span id="p2val">100</span></div>
-<div class="modedsp"><span id="modeval">Demo Type</span></div>
+<div class="p1fr"><span id="p1val">100 uS</span></div>
+<div class="p2fr"><span id="p2val">10.0 V</span></div>
+<div class="p3fr"><span id="p3val">X - 0</span></div>
+<div class="p4fr"><span id="p4val">Y - 0</span></div>
+<div class="modedsp"><span id="modeval">0</span></div>
 <div class="credits"><a target="_blank" href="http://www.dapj.com/">dapj Tech</a></div>
-<div class="help-man"><a target="_blank" href=""><img src="pngs/help.png" title="Help" alt="Help" border="0"></a></div>
+<div class="help-man"><a target="_blank" href="http://www.dapj.com/gadgets/oscilloscope"><img src="pngs/help.png" title="Help" alt="Help" border="0"></a></div>
 </div>
 <script language="Javascript" type="text/javascript" src="scope.js"></script>
 </body>
