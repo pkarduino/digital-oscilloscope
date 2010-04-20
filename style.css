@@ -12,7 +12,7 @@ img {
 
 a:link,a:active,a:visited {
 	text-decoration: none;
-	color: #7B68EE;
+	color: #6A5ACD;
 }
 
 a:hover {
@@ -30,12 +30,23 @@ form, textarea, select, input{
 }
 
 .frame-holder{
-	background-image: url(notebook.png);
+	background-image: url(bezel.png);
 	position: absolute;
 	left: 0;
 	top: 0;
 	height:520px;
-	width:100%;
+	width:350px;
+	z-index: 1;
+	background-color: transparent;
+}
+
+.frame-back{
+	background-image: url(back.jpg);
+	position: absolute;
+	left: 10;
+	top: 10;
+	height:500px;
+	width:330px;
 	z-index: 1;
 	background-color: transparent;
 }
@@ -45,8 +56,8 @@ form, textarea, select, input{
 	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
 	position: absolute;
-	left: 100px;
-	top: 10px;
+	left: 20px;
+	top: 22px;
 	height: 182px;
 	width: 223px;
 	z-index: 1;
@@ -57,8 +68,8 @@ form, textarea, select, input{
 	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
 	position: absolute;
-	left: 100px;
-	top: 22px;
+	left: 20px;
+	top: 35px;
 	height: 160px;
 	width: 210px;
 	z-index: 2;
@@ -68,34 +79,35 @@ form, textarea, select, input{
 
 .credits{
 	position: absolute;
-	left: 10px;
-	top: 10px;
+	left: 15px;
+	top: 475px;
 	z-index: 100;
 	height: 20px;
-	width: 100px;
+	width: 80px;
 	font-size: 12px;
 	font-weight: bold;
 	letter-spacing: 1px;
 	text-align: center;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
 }
 
 .p1_track{
 	position: absolute;
 	left: 0px;
-	top: 40px;
-	height: 20px;
+	top: 2px;
+	height: 10px;
 	width: 200px;
 	background-color: transparent;
-	background-image: url(pngs/pot-track.png);
+	background-image: url(pngs/pot.png);
 	z-index: 200;
 	text-align: center;
 }
 
 #pot1_set{
 	position: relative;
-	height: 43px;
-	width: 17px;
-	background-image: url(pngs/slider.png);
+	height: 13px;
+	width: 13px;
+	background-image: url(pngs/grip.gif);
 	background-repeat: no-repeat;
 	z-index: 250;
 }
@@ -104,7 +116,7 @@ form, textarea, select, input{
 	position: absolute;
 	left: 110px;
 	top: 260px;
-	height: 60px;
+	height: 20px;
 	width: 200px;
 	z-index: 100;
 }
@@ -112,20 +124,20 @@ form, textarea, select, input{
 .p2_track{
 	position: absolute;
 	left: 0px;
-	top: 40px;
-	height: 20px;
+	top: 2px;
+	height: 10px;
 	width: 200px;
 	background-color: transparent;
-	background-image: url(pngs/pot-track.png);
+	background-image: url(pngs/pot.png);
 	z-index: 200;
 	text-align: center;
 }
 
 #pot2_set{
 	position: relative;
-	height: 43px;
-	width: 17px;
-	background-image: url(pngs/slider.png);
+	height: 13px;
+	width: 13px;
+	background-image: url(pngs/grip.gif);
 	background-repeat: no-repeat;
 	z-index: 250;
 }
@@ -134,7 +146,7 @@ form, textarea, select, input{
 	position: absolute;
 	left:110px;
 	top: 350px;
-	height: 60px;
+	height: 20px;
 	width: 200px;
 	z-index: 100;
 }
@@ -144,8 +156,8 @@ form, textarea, select, input{
 	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
 	position: absolute;
-	left: 100px;
-	top: 200px;
+	left: 250px;
+	top: 50px;
 	height: 50px;
 	width: 50px;
 	z-index: 220;
@@ -160,8 +172,8 @@ form, textarea, select, input{
 	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
 	position: absolute;
-	left: 150px;
-	top: 200px;
+	left: 250px;
+	top: 100px;
 	height: 50px;
 	width: 50px;
 	z-index: 220;
@@ -176,8 +188,8 @@ form, textarea, select, input{
 	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
 	position: absolute;
-	left: 60px;
-	top: 40px;
+	left: 45px;
+	top: 440px;
 	z-index: 20;
 	height:25px;
 	width:25px;
