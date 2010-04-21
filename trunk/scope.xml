@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+<ModulePrefs title="Basic Virtual Oscilloscope and Waveforms"
+     title_url="http://www.dapj.com/gadgets/oscilloscope"
+     description="Oscilloscope Functions and Fourier Series. Periodic Waveforms. Watch Sine, Square, Triangle and Sawtooth Waves and Study Controls"
+     height="500"
+     directory_title="Basic Virtual Oscilloscope and Waveforms"
+     author="dapj"
+     author_location="Bangalore, India"
+     author_affiliation="dapj.com"
+     screenshot="http://digital-oscilloscope.googlecode.com/svn/trunk/oscope.jpg"
+     thumbnail="http://digital-oscilloscope.googlecode.com/svn/trunk/oscope-tn.jpg"
+     scaling="true"
+     scrolling="false"
+     author_photo="http://seven-segment-digital-clock.googlecode.com/svn/trunk/delogo.png"
+     author_aboutme="Electronic Product Designer"
+     author_link="http://www.dapj.com/"
+     author_quote="Design with a Difference - Solderman"
+     author_email="gadgets@dapj.com">
+<Require feature="views"/>
+<Require feature="opensocial-0.8"/>
+</ModulePrefs>
+<Content type="html" view="home, profile">
+<![CDATA[
+<iframe src="http://digital-oscilloscope.googlecode.com/svn/trunk/oscilloscope.html" marginwidth="0" marginheight="0" allowtransparency="true" frameborder="0" height="500" scrolling="no" width="330"></iframe>
+]]>
+</Content>
+<Content type="html" view="canvas">
+<![CDATA[
+<iframe src="http://digital-oscilloscope.googlecode.com/svn/trunk/oscilloscope.html" marginwidth="0" marginheight="0" allowtransparency="true" frameborder="0" height="500" scrolling="no" width="100%"></iframe>
+]]>
+</Content>
+<Content type="html">
+<![CDATA[
+<iframe src="http://digital-oscilloscope.googlecode.com/svn/trunk/oscilloscope.html" marginwidth="0" marginheight="0" allowtransparency="true" frameborder="0" height="500" scrolling="no" width="330"></iframe>
+]]>
+</Content>
+</Module>
