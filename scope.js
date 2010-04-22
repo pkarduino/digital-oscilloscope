@@ -16,9 +16,9 @@ wavef[3]= "Math.round(v_pot/3*((Math.sin(5*xmov/h_pot)>0)?1:-1));"
 wavef[4]= "Math.round(v_pot/1.4*((xmov/h_pot)%1-0.5));"
 wavef[5]= "Math.round(v_pot/3*(Math.tan(xmov*2/h_pot)));"
 wavef[6]= "Math.round(v_pot/3*(Math.cos(xmov*2/h_pot)));";
-wavef[7]= "Math.round(v_pot/3*(Math.sin(xmov*2/h_pot)));"
-wavef[8]= "Math.round(v_pot/3*(Math.sin(xmov*2/h_pot)));"
-wavef[9]= "Math.round(v_pot/3*(Math.sin(xmov*2/h_pot)));"
+wavef[7]= "Math.round(v_pot/4*(Math.sin(xmov*15/h_pot)*Math.log(xmov/15)));"
+wavef[8]= "Math.round(v_pot/3*(Math.sin(Math.exp(xmov*2/h_pot))));"   
+wavef[9]= "Math.round(v_pot/3*(Math.sin(xmov*2/h_pot)*Math.sin(xmov)));"
 
 // Preload Images
 var pwr_0 = new Image();
