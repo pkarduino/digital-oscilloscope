@@ -12,7 +12,7 @@ img {
 
 a:link,a:active,a:visited {
 	text-decoration: none;
-	color: #6A5ACD;
+	color: #483D8B;
 }
 
 a:hover {
@@ -20,13 +20,23 @@ a:hover {
 	color: #DC143C;
 }
 
-form, textarea, select, input{
-	color: #9370DB;
-	font-weight: bold;
+form{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+textarea, select, input{
+	background: transparent;
+	overflow: hidden;
 	font-family: Verdana,Arial,Helvetica,sans-serif;
-	font-size: 7px;
-	margin: 1px 1px 1px 1px;
-	padding: 1px 1px 1px 1px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	border: 1px solid #86AED0;
+	height: 30px;
+	width: 290px;
+	color: #424D55;
+	font-size: 12px;
+	text-align: center;
 }
 
 .frame-holder{
@@ -80,7 +90,7 @@ form, textarea, select, input{
 .credits{
 	position: absolute;
 	left: 15px;
-	top: 460px;
+	top: 455px;
 	z-index: 100;
 	height: 20px;
 	width: 80px;
@@ -251,8 +261,8 @@ form, textarea, select, input{
 	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
 	position: absolute;
-	left: 45px;
-	top: 430px;
+	left: 290px;
+	top: 455px;
 	z-index: 20;
 	height:25px;
 	width:25px;
@@ -363,29 +373,50 @@ form, textarea, select, input{
 }
 
 .modedsp{
+	background-image: url(pngs/fback.png);	
 	position: absolute;
-	left: 250px;
-	top: 150px;
-	height:50px;
-	width: 50px;
+	left: 20px;
+	top: 340px;
+	height:30px;
+	width: 290px;
 	background-color: transparent;
 	z-index: 200;
 	overflow: hidden;
+	border: 1px solid #86AED0;
 }
 
 #modeval{
 	background-color: transparent;
 	position: absolute;
-	height: 40px;
-	width: 40px;
-	left: 5px;
-	top: 5px;
-	font-size: 12px;
-	color: #9F116A;
+	height: 30px;
+	width: 290px;
+	font-size: 11px;
+	color: #424D55;
 	z-index: 300;
 	text-align: center;
-	font-weight: bold;
 	font-family: Verdana,Arial,Helvetica,sans-serif;
+}
+
+.formdsp{
+	background-image: url(pngs/fback.png);
+	position: absolute;
+	left: 20px;
+	top: 390px;
+	height:30px;
+	width: 290px;
+	background-color: transparent;
+	z-index: 200;
+	overflow: hidden;
+}
+
+.equaon{
+	position: absolute;
+	left: 90px;
+	top: 430px;
+	height: 23px;
+	width: 151px;
+	background-color: transparent;
+	z-index: 200;
 }
 
 #point1,#point2,#point3,#point4,#point5,#point6,#point7,#point8,#point9,#point10,#point11,#point12,#point13,#point14,#point15,#point16,#point17,#point18,#point19,#point20{
