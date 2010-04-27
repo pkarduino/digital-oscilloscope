@@ -133,7 +133,7 @@ function on_demo(){
 if (pwr_on==1){
 dem_on=1;
 document.images.modesw.src=dem_1.src;
-if(dem_no<10){dem_no++;}else{dem_no=1}
+if(dem_no<9){dem_no++;}else{dem_no=1}
 linktext[1]=  wavef[dem_no];
 show_text(1,'modeval');
 run_demo();
